@@ -116,6 +116,16 @@ Example
   }]
 }
         </pre>
+
+        <p class="note">
+          The <code>id</code> of the verification method SHOULD be the JWK
+          thumbprint calculated from the <code>publicKeyJwk</code> property
+          value according to [[RFC7638]] or
+
+          <a href="https://w3c-ccg.github.io/did-method-key/#format">
+          <code>did:key</code> Multicodec identifier</a> for the <code>publicKeyBase58</code> property.
+        </p>
+
       </section>
     </section>
 
