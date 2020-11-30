@@ -1,6 +1,6 @@
 ## DID Method Onion Specification
 
-This specification describes a [DID Method](https://www.w3.org/TR/did-core/) related to [TOR Hidden Services](https://2019.www.torproject.org/docs/onion-services)
+This specification describes a [DID Method](https://www.w3.org/TR/did-core/) related to [Tor Hidden Services](https://2019.www.torproject.org/docs/onion-services)
 
 We encourage contributions meeting the [Contribution
 Guidelines](CONTRIBUTING.md). While we prefer the creation of issues

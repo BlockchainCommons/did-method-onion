@@ -72,7 +72,7 @@
 DIDs that target a distributed ledger face significant practical challenges in
 bootstrapping enough meaningful trusted data around identities to incentivize
 mass adoption. We propose using a new DID method that allows them to 
-bootstrap trust using a TOR Hidden Service's existing reputation.
+bootstrap trust using a Tor Hidden Service's existing reputation.
       </p>
     </section>
     <section id="sotd">
@@ -105,17 +105,27 @@ Example
   "@context": ["https://www.w3.org/ns/did/v1"],
   "id": "did:onion:fscst5exmlmr262byztwz4kzhggjlzumvc2ndvgytzoucr2tkgxf7mid",
   "verificationMethod": [{
-    "id": "#z6MkhXq6jnd4hRnsgzpBBntqQSL452UzrhjmxSfdkrmHagL8",
+    "id": "#g7r2t9G8dBBnG7yZkD8sly3ImDlrntB25s2pGuaD97E",
     "type": "JsonWebKey2020",
     "controller": "did:onion:fscst5exmlmr262byztwz4kzhggjlzumvc2ndvgytzoucr2tkgxf7mid",
     "publicKeyJwk": {
       "crv": "Ed25519",
-      "x": "Lb7CMu_9Cqf5bB_Ke9Yzyep85dt3BSvlFlCnJt2aHjk",
+      "x": "LIUp9Jdi2R17QcZnbPFZOYyV5oyotNHU2J5dQUdTUa4",
       "kty": "OKP"
     }
   }]
 }
         </pre>
+
+        <p class="note">
+          The <code>id</code> of the verification method SHOULD be the JWK
+          thumbprint calculated from the <code>publicKeyJwk</code> property
+          value according to [[RFC7638]] or
+
+          <a href="https://w3c-ccg.github.io/did-method-key/#format">
+          <code>did:key</code> Multicodec identifier</a> for the <code>publicKeyBase58</code> property.
+        </p>
+
       </section>
     </section>
 
@@ -129,8 +139,8 @@ DID Onion Method
 Target system
         </h2>
         <p>
-The target system of the Onion DID method is the TOR Hidden Service that the identifier
-described by the DID resolves to when queried through TOR.
+The target system of the Onion DID method is the Tor Hidden Service that the identifier
+described by the DID resolves to when queried through Tor.
         </p>
       </section>
 
@@ -152,13 +162,13 @@ lowercase. The remainder of the DID, after the prefix, is specified below.
 Method-specific identifier
         </h2>
         <p>
-The method specific identifier is a TOR Hidden Service identifier 
+The method specific identifier is a Tor Hidden Service identifier 
 with an optional path to the DID document.
 The formal rules describing valid onion address syntax are described in
 [[rfc7686]].
         </p>
         <p>
-The method specific identifier MUST match the TOR Hidden Service, 
+The method specific identifier MUST match the Tor Hidden Service, 
 and it MUST NOT include IP addresses or port numbers. Directories
 and subdirectories MAY optionally be included, delimited by colons rather
 than slashes.
@@ -191,7 +201,7 @@ Creating a DID is done by:
           </p>
           <ol>
             <li>
-generating and operating a TOR Hidden Service that serves a filesystem directory.
+generating and operating a Tor Hidden Service that serves a filesystem directory.
             </li>
             <li>
 storing the location of a hosting service.
@@ -252,7 +262,7 @@ Append <code>/did.json</code> to complete the URL.
             </li>
             <li>
 Perform an HTTP <code>GET</code> request to the URL using an agent that can
-successfully negotiate a secure HTTP connection to a TOR Hidden Service, which enforces the security
+successfully negotiate a secure HTTP connection to a Tor Hidden Service, which enforces the security
 requirements as described in <a href="#security-and-privacy-considerations"></a>.
             </li>
           </ol>
@@ -299,7 +309,7 @@ Security and Privacy Considerations
 
         <section>
           <h3>
-TOR Considerations
+Tor Considerations
           </h3>
 
           <p class="issue" >
