@@ -2,31 +2,37 @@
 
 This specification describes a [DID Method](https://www.w3.org/TR/did-core/) related to [Tor Hidden Services](https://2019.www.torproject.org/docs/onion-services)
 
-We encourage contributions meeting the [Contribution
-Guidelines](CONTRIBUTING.md). While we prefer the creation of issues
-and Pull Requests in the GitHub repository, discussions often occur
-on the
-[public-credentials](http://lists.w3.org/Archives/Public/public-credentials/)
-mailing list as well.
+The web version of the spec itself is at https://blockchaincommons.github.io/did-method-onion/
+
+The spec can be edited as PRs to https://github.com/BlockchainCommons/did-method-onion/blob/main/index.html.
+
+The spec currently supports conversion to leverage W3C CCG Respec template javascript, though that feature is current turned off in this release as we have not submitted this spec to the [W3C Credentials Community Group (CCG)](https://w3c-ccg.github.io] yet nor have they accepted it as a work item.
+
+We encourage contributions meeting the [ContributionGuidelines](CONTRIBUTING.md). While we prefer the creation of issues and Pull Requests in this GitHub repository, discussions often occur in the public [Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions/35) as well. 
+
+## Status - Experimental and Early Provisional
+
+**DID Method Onion Specification** is currently under active development and in the early experimental phase. It should not be used for production tasks until it has had further testing and auditing.
+
+## Goal
+
+Our medium-term goal is to submit this specification to the W3C Credentials Community Group, however, we want to incubate it more at Blockchain Commons first.
+
+The addition of this `did:onion` spec has been proposed to the DID Method Registry in PR https://github.com/w3c/did-spec-registries/pull/163 but requires us to finish the "Security and Privacy Considerations" section.
+
+In particular we'd like to review more with our community how closely we want to `did:onion` to be to `did:web`, or if we want to incorporate some elements of `did:peer`, KERI, or leverage services like Open Time Stamps. 
 
 ### Other useful links
 
-- [Public group email archive](https://lists.w3.org/Archives/Public/public-credentials/)
+- [`did-onion` discussion in the Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions/35)
 
-## Status - Experimental
-
-**DID Method Onion Specification** is currently under active development and in the early experimental phase. It should not be used for production tasks until it has had further testing and auditing.
+- [W3C Credentials Community Group public group email archive](https://lists.w3.org/Archives/Public/public-credentials/)
 
 ## Origin, Authors, Copyright & Licenses
 
 Unless otherwise noted (either in this [/README.md](./README.md) or in the file's header comments) the contents of this repository are Copyright © 2020 by Blockchain Commons, LLC, and are [licensed](./LICENSE) under the [spdx:BSD-2-Clause Plus Patent License](https://spdx.org/licenses/BSD-2-Clause-Patent.html).
 
 In most cases, the authors, copyright, and license for each file reside in header comments in the source code. When it does not, we have attempted to attribute it accurately in the table below.
-
-This table below also establishes provenance (repository of origin, permalink, and commit id) for files included from repositories that are outside of this repo. Contributors to these files are listed in the commit history for each repository, first with changes found in the commit history of this repo, then in changes in the commit history of their repo of their origin.
-
-| File      | From                                                         | Commit                                                       | Authors & Copyright (c)                                | License                                                     |
-| --------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------ | ----------------------------------------------------------- |
 
 ### Derived from…
 
