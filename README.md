@@ -1,14 +1,18 @@
 ## DID Method Onion Specification
 
-This specification describes a [DID Method](https://www.w3.org/TR/did-core/) related to [Tor Hidden Services](https://2019.www.torproject.org/docs/onion-services)
+This specification describes a [W3C DID Method](https://www.w3.org/TR/did-core/#dfn-did-methods) related to [Tor Hidden Services](https://2019.www.torproject.org/docs/onion-services)
 
-The web version of the spec itself is at https://blockchaincommons.github.io/did-method-onion/
+The web-hosted version of the spec itself is at: https://blockchaincommons.github.io/did-method-onion/
 
-The spec can be edited as PRs to https://github.com/BlockchainCommons/did-method-onion/blob/main/index.html.
+The spec text can be edited as PRs to the html at: https://github.com/BlockchainCommons/did-method-onion/blob/main/index.html.
 
-The spec currently supports conversion to leverage W3C CCG Respec template javascript, though that feature is current turned off in this release as we have not submitted this spec to the [W3C Credentials Community Group (CCG)](https://w3c-ccg.github.io] yet nor have they accepted it as a work item.
+This spec text currently supports conversion to leverage [W3C CCG Respec](https://github.com/w3c/respec) template's javascript, though that feature is current turned off in this release as we have not submitted this spec to the [W3C Credentials Community Group (CCG)](https://w3c-ccg.github.io] yet nor have they accepted it as a work item.
 
-We encourage contributions meeting the [ContributionGuidelines](CONTRIBUTING.md). While we prefer the creation of issues and Pull Requests in this GitHub repository, discussions often occur in the public [Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions/35) as well. 
+# Contributions
+
+We encourage public contributions through issues and pull requests! Please review [CONTRIBUTING.md](./CONTRIBUTING.md) for details on our development process. All contributions to this repository require a GPG signed [Contributor License Agreement](./CLA.md). This signature is required as it will allow us to move this spec to be under [W3C community Contributor License Agreement](https://www.w3.org/community/about/process/cla/) later.
+
+While we prefer the creation of issues and Pull Requests about this spec in this GitHub repository, discussions often occur in the public [Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions/35) as well. 
 
 ## Status - Experimental and Early Provisional
 
