@@ -6,7 +6,7 @@ The web-hosted version of the spec itself is at: https://blockchaincommons.githu
 
 The spec text can be edited as PRs to the html at: https://github.com/BlockchainCommons/did-method-onion/blob/main/index.html.
 
-This spec text currently supports conversion to leverage [W3C CCG Respec](https://github.com/w3c/respec) template's javascript, though that feature is current turned off in this release as we have not submitted this spec to the [W3C Credentials Community Group (CCG)](https://w3c-ccg.github.io] yet nor have they accepted it as a work item.
+This spec text currently supports conversion to leverage [W3C CCG Respec](https://github.com/w3c/respec) template's javascript, though that feature is current turned off in this release as we have not submitted this spec to the [W3C Credentials Community Group (CCG)](https://w3c-ccg.github.io) yet nor have they accepted it as a work item.
 
 # Contributions
 
