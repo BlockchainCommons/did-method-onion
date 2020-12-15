@@ -1,5 +1,8 @@
 ## DID Method Onion Specification
 
+* <img src="https://raw.githubusercontent.com/BlockchainCommons/torgap/master/images/logos/torgap.png" width=30 valign="bottom"> ***part of the [torgap](https://github.com/BlockchainCommons/torgap/blob/master/README.md) technology family***
+
+
 This specification describes a [W3C DID Method](https://www.w3.org/TR/did-core/#dfn-did-methods) related to [Tor Hidden Services](https://2019.www.torproject.org/docs/onion-services).
 
 The web-hosted version of the spec itself is at: https://blockchaincommons.github.io/did-method-onion/
