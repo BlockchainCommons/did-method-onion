@@ -1,36 +1,36 @@
 ## DID Method Onion Specification
 
-This specification describes a [W3C DID Method](https://www.w3.org/TR/did-core/#dfn-did-methods) related to [Tor Hidden Services](https://2019.www.torproject.org/docs/onion-services)
+This specification describes a [W3C DID Method](https://www.w3.org/TR/did-core/#dfn-did-methods) related to [Tor Hidden Services](https://2019.www.torproject.org/docs/onion-services).
 
 The web-hosted version of the spec itself is at: https://blockchaincommons.github.io/did-method-onion/
 
 The spec text can be edited as PRs to the html at: https://github.com/BlockchainCommons/did-method-onion/blob/main/index.html.
 
-This spec text currently supports conversion to leverage [W3C CCG Respec](https://github.com/w3c/respec) template's javascript, though that feature is current turned off in this release as we have not submitted this spec to the [W3C Credentials Community Group (CCG)](https://w3c-ccg.github.io) yet nor have they accepted it as a work item.
+This spec text supports conversion that leverages the [W3C CCG Respec](https://github.com/w3c/respec) template's javascript, though that feature is currently turned off in this release as we have not yet submitted this spec to the [W3C Credentials Community Group (CCG)](https://w3c-ccg.github.io), nor have they accepted it as a work item.
 
-# Contributions
+## Additional Information
 
-We encourage public contributions through issues and pull requests! Please review [CONTRIBUTING.md](./CONTRIBUTING.md) for details on our development process. All contributions to this repository require a GPG signed [Contributor License Agreement](./CLA.md). This signature is required as it will allow us to move this spec to be under [W3C community Contributor License Agreement](https://www.w3.org/community/about/process/cla/) later.
+- [`did-onion` discussion in the Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions/35)
+- [W3C Credentials Community Group public group email archive](https://lists.w3.org/Archives/Public/public-credentials/)
 
-While we prefer the creation of issues and Pull Requests about this spec in this GitHub repository, discussions often occur in the public [Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions/35) as well. 
+
+## Goals
+
+Our medium-term goal is to submit this specification to the W3C Credentials Community Group. However, we want to incubate it more at Blockchain Commons first.
+
+The addition of this `did:onion` spec has been proposed to the DID Method Registry in [PR 163](https://github.com/w3c/did-spec-registries/pull/163) but we are required to finish the "Security and Privacy Considerations" section.
+
+In particular, we'd like to review more with our community how close we want to keep `did:onion` to `did:web`, and if we want to incorporate some elements of `did:peer` or KERI or to leverage services like Open Time Stamps. 
+
+## Contributions
+
+We encourage public contributions through issues and pull requests! Please review [CONTRIBUTING.md](./CONTRIBUTING.md) for details on our development process. All contributions to this repository need a GPG signed [Contributor License Agreement](./CLA.md). This signature is required as it will allow us to move this spec to be under [W3C community Contributor License Agreement](https://www.w3.org/community/about/process/cla/) later.
+
+While we prefer the creation of Issues and Pull Requests about this spec in this GitHub repository, discussions often occur in the public [Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions/35) as well. 
 
 ## Status - Experimental and Early Provisional
 
 **DID Method Onion Specification** is currently under active development and in the early experimental phase. It should not be used for production tasks until it has had further testing and auditing.
-
-## Goal
-
-Our medium-term goal is to submit this specification to the W3C Credentials Community Group, however, we want to incubate it more at Blockchain Commons first.
-
-The addition of this `did:onion` spec has been proposed to the DID Method Registry in PR https://github.com/w3c/did-spec-registries/pull/163 but requires us to finish the "Security and Privacy Considerations" section.
-
-In particular we'd like to review more with our community how closely we want to `did:onion` to be to `did:web`, or if we want to incorporate some elements of `did:peer`, KERI, or leverage services like Open Time Stamps. 
-
-### Other useful links
-
-- [`did-onion` discussion in the Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions/35)
-
-- [W3C Credentials Community Group public group email archive](https://lists.w3.org/Archives/Public/public-credentials/)
 
 ## Origin, Authors, Copyright & Licenses
 
