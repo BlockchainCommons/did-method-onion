@@ -1,7 +1,6 @@
 ## DID Method Onion Specification
 
-* <img src="https://raw.githubusercontent.com/BlockchainCommons/torgap/master/images/logos/torgap.png" width=30 valign="bottom"> ***part of the [torgap](https://github.com/BlockchainCommons/torgap/blob/master/README.md) technology family***
-
+- <img src="https://raw.githubusercontent.com/BlockchainCommons/torgap/master/images/logos/torgap.png" width=30 valign="bottom"> **_part of the [torgap](https://github.com/BlockchainCommons/torgap/blob/master/README.md) technology family_**
 
 This specification describes a [W3C DID Method](https://www.w3.org/TR/did-core/#dfn-did-methods) related to [Tor Hidden Services](https://2019.www.torproject.org/docs/onion-services).
 
@@ -16,20 +15,19 @@ This spec text supports conversion that leverages the [W3C CCG Respec](https://g
 - [`did-onion` discussion in the Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions/35)
 - [W3C Credentials Community Group public group email archive](https://lists.w3.org/Archives/Public/public-credentials/)
 
-
 ## Goals
 
 Our medium-term goal is to submit this specification to the W3C Credentials Community Group. However, we want to incubate it more at Blockchain Commons first.
 
 The addition of this `did:onion` spec has been proposed to the DID Method Registry in [PR 163](https://github.com/w3c/did-spec-registries/pull/163) but we are required to finish the "Security and Privacy Considerations" section.
 
-In particular, we'd like to review more with our community how close we want to keep `did:onion` to `did:web`, and if we want to incorporate some elements of `did:peer` or KERI or to leverage services like Open Time Stamps. 
+In particular, we'd like to review more with our community how close we want to keep `did:onion` to `did:web`, and if we want to incorporate some elements of `did:peer` or KERI or to leverage services like Open Time Stamps.
 
 ## Contributions
 
 We encourage public contributions through issues and pull requests! Please review [CONTRIBUTING.md](./CONTRIBUTING.md) for details on our development process. All contributions to this repository need a GPG signed [Contributor License Agreement](./CLA.md). This signature is required as it will allow us to move this spec to be under [W3C community Contributor License Agreement](https://www.w3.org/community/about/process/cla/) later.
 
-While we prefer the creation of Issues and Pull Requests about this spec in this GitHub repository, discussions often occur in the public [Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions/35) as well. 
+While we prefer the creation of Issues and Pull Requests about this spec in this GitHub repository, discussions often occur in the public [Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions/35) as well.
 
 ## Status - Experimental and Early Provisional
 
@@ -51,14 +49,14 @@ In most cases, the authors, copyright, and license for each file reside in heade
 
 These are other projects that work with or leverage **DID Method Onion Specification**:
 
-- [Tor](https://www.torproject.org/) — The Tor Project 
+- [Tor](https://www.torproject.org/) — The Tor Project
 - [DID W3C Working Draft](https://www.w3.org/TR/did-core/) — The W3C Draft, by Drummond Reed (Evernym), Manu Sporny (Digital Bazaar), Markus Sabadello (Danube Tech), Dave Longley (Digital Bazaar), Christopher Allen (Blockchain Commons), Ryan Grant, and Jonathan Holt, DO, MS (ConsenSys Health)
 
 ## Financial Support
 
-**DID Method Onion Specification**  is a project of [Blockchain Commons](https://www.blockchaincommons.com/). We are proudly a "not-for-profit" social benefit corporation committed to open source & open development. Our work is funded entirely by donations and collaborative partnerships with people like you. Every contribution will be spent on building open tools, technologies, and techniques that sustain and advance blockchain and internet security infrastructure and promote an open web.
+**DID Method Onion Specification** is a project of [Blockchain Commons](https://www.blockchaincommons.com/). We are proudly a "not-for-profit" social benefit corporation committed to open source & open development. Our work is funded entirely by donations and collaborative partnerships with people like you. Every contribution will be spent on building open tools, technologies, and techniques that sustain and advance blockchain and internet security infrastructure and promote an open web.
 
-To financially support further development of **DID Method Onion Specification**  and other projects, please consider becoming a Patron of Blockchain Commons through ongoing monthly patronage as a [GitHub Sponsor](https://github.com/sponsors/BlockchainCommons). You can also support Blockchain Commons with bitcoins at our [BTCPay Server](https://btcpay.blockchaincommons.com/).
+To financially support further development of **DID Method Onion Specification** and other projects, please consider becoming a Patron of Blockchain Commons through ongoing monthly patronage as a [GitHub Sponsor](https://github.com/sponsors/BlockchainCommons). You can also support Blockchain Commons with bitcoins at our [BTCPay Server](https://btcpay.blockchaincommons.com/).
 
 ## Contributing
 
@@ -84,9 +82,10 @@ If your company requires support to use our projects, please feel free to contac
 
 The following people directly contributed to this repository. You can add your name here by getting involved. The first step is learning how to contribute from our [CONTRIBUTING.md](./CONTRIBUTING.md) documentation.
 
-| Name              | Role                | Github                                            | Email                                 | GPG Fingerprint                                    |
-| ----------------- | ------------------- | ------------------------------------------------- | ------------------------------------- | -------------------------------------------------- |
-| Christopher Allen | Principal Architect | [@ChristopherA](https://github.com/ChristopherA) | \<ChristopherA@LifeWithAlacrity.com\> | FDFE 14A5 4ECB 30FC 5D22  74EF F8D3 6C91 3574 05ED |
+| Name              | Role                | Github                                           | Email                                 | GPG Fingerprint                                   |
+| ----------------- | ------------------- | ------------------------------------------------ | ------------------------------------- | ------------------------------------------------- |
+| Christopher Allen | Principal Architect | [@ChristopherA](https://github.com/ChristopherA) | \<ChristopherA@LifeWithAlacrity.com\> | FDFE 14A5 4ECB 30FC 5D22 74EF F8D3 6C91 3574 05ED |
+| Orie Steele       | Developer           | [@OR13](https://github.com/OR13)                 | \<orie@transmute.industries\>         | 3BCA C9A8 82DE FE70 3FD5 2079 E9CB 06E7 1794 A713 |
 
 ## Responsible Disclosure
 
@@ -100,9 +99,8 @@ Please report suspected security vulnerabilities in private via email to Christo
 
 The following keys may be used to communicate sensitive information to developers:
 
-| Name              | Fingerprint                                        |
-| ----------------- | -------------------------------------------------- |
-| Christopher Allen | FDFE 14A5 4ECB 30FC 5D22  74EF F8D3 6C91 3574 05ED |
+| Name              | Fingerprint                                       |
+| ----------------- | ------------------------------------------------- |
+| Christopher Allen | FDFE 14A5 4ECB 30FC 5D22 74EF F8D3 6C91 3574 05ED |
 
 You can import a key by running the following command with that individual’s fingerprint: `gpg --recv-keys "<fingerprint>"` Ensure that you put quotes around fingerprints that contain spaces.
-
