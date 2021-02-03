@@ -6,8 +6,11 @@
     <!-- <script src="https://www.w3.org/Tools/respec/respec-w3c" async class="remove"></script> -->
     <script class="remove">
       var respecConfig = {
-        specStatus: "PRE-DRAFT",
+        previousPublishDate: "2020-11-20",
+        previousMaturity: "unofficial",
+        specStatus: "unofficial",
         shortName: "did-method-onion",
+        subtitle: "A DID Method built on Tor Hidden Services",
         group: "credentials",
         editors: [{
         name: "Christopher Allen",
@@ -51,13 +54,7 @@
               ],
             publisher: "Rebooting the Web of Trust 2017"
           },
-          "DID-DNS": {
-            title: "The Decentralized Identifier (DID) in the DNS",
-            href: "https://tools.ietf.org/html/draft-mayrhofer-did-dns-01",
-            authors: ["A. Mayrhofer", "D. Klesev", "M. Sabadello"],
-            status: "Internet Draft",
-            publisher: "IETF"
-          },
+          
           "OWASP-TRANSPORT": {
             title: "Transport Layer Protection Cheatsheet",
             href: "https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet",
@@ -165,7 +162,7 @@ Method-specific identifier
 The method specific identifier is a Tor Hidden Service identifier 
 with an optional path to the DID document.
 The formal rules describing valid onion address syntax are described in
-[[rfc7686]].
+[[RFC7686]].
         </p>
         <p>
 The method specific identifier MUST match the Tor Hidden Service, 
@@ -307,35 +304,35 @@ to be no longer publicly available due to any other means.
 Security and Privacy Considerations
         </h2>
 
+<p>
+Because Tor Hidden services already provide end to end encryption, a second layer of TLS is redundantt. 
+However, implenters should be familiar with [[OWASP-TRANSPORT]], 
+and related industry best practices for securing web services. 
+</p>
+
         <section>
           <h3>
 Tor Considerations
-          </h3>
+          </h3> 
 
-          <p class="issue" >
-            TBD
-          </p>
+<p>
+  The security properties of the Tor network, and 
+  related Tor software are relied on by <code>did:onion</code>.
+</p>
 
-        </section>
+<p>
+  Implementers are cautioned to follow all best practices associated with operating a Tor Hidden service.
+</p>
 
-        <section>
-          <h3>
-DID Document Integrity Verification
-          </h3>
+<p>
+  See <a href="https://tools.ietf.org/html/rfc7686#section-4">RFC 7686</a> 
+  for security considerations associated aith <code>.onion</code>.
+</p>    
 
-          <p class="issue" >
-            TBD
-          </p>
-          
-        </section>
-        <section>
-          <h3>
-In-transit Security
-          </h3>
-
-          <p class="issue" >
-            TBD
-          </p>
+<p>
+  See <a href="https://www.torproject.org/">torproject.org</a> 
+  for the latest documentation on th Tor Project.
+</p>
 
         </section>
 
@@ -354,13 +351,13 @@ the domain operator has the private keys.
 This example:
           </p>
 
-          <pre class="nohighlight">
+          <pre class="example">
 did:onion:fscst5exmlmr262byztwz4kzhggjlzumvc2ndvgytzoucr2tkgxf7mid:u:bob
           </pre>
           <p>
 resolves to the DID document at:
           </p>
-          <pre class="nohighlight">
+          <pre class="example">
 http://fscst5exmlmr262byztwz4kzhggjlzumvc2ndvgytzoucr2tkgxf7mid.onion/u/bob/did.json
           </pre>
           <p>
